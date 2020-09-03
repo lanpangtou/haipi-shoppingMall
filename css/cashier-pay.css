@@ -1,0 +1,152 @@
+.clearfix:after {
+    content:" ";
+    height: 0;
+    display: block;
+    clear:both;
+}
+.clearfix {
+    zoom: 1;
+}
+.centre {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+.s-wrap {
+    height: 75px;
+}
+.s-logo {
+    position: absolute;
+    width: 170px;
+    height: 60px;
+    top: 15px;
+    left: 0px;
+}
+.s-logo img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.s-right {
+    padding-top: 30px;
+    float: right;
+}
+.s-title {
+    position: absolute;
+    top: 30px;
+    left: 175px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.s-right .s-item {
+    height: 20px;
+    line-height: 20px;
+    padding: 0 11px 0 12px;
+    float: left;
+}
+.s-right .s-div {
+    float: left;
+}
+.main {
+    padding-bottom: 50px;
+    background-color: #fff;
+}
+.o-left {
+    float: left;
+    width: 640px;
+    padding: 32px 0px;
+}
+.o-left .o-title{
+    font-size: 14px;
+    line-height: 26px;
+    height: 26px;
+    color: #333;
+}
+.o-right {
+    float: right;
+    width: 190px;
+    padding: 32px 10px 10px 0px;
+    text-align: right;
+}
+.o-right .o-price {
+    font-size: 14px;
+}
+.o-right .o-price strong {
+    font-size: 16px;
+    vertical-align: bottom;
+    color: #e31613;
+    margin: 0 3px;
+    font-weight: 600;
+}
+.payment {
+    background-color: #ffffff;
+    padding: 12px 30px;
+    box-shadow: 0 6px 32px rgba(0,0,0,.13);
+}
+.p-w-head {
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+.p-w-body {
+    padding-left: 130px;
+    margin-bottom: 30px;
+}
+.p-w-box {
+    float: left;
+    width: 300px;
+}
+.pw-box-hd {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    width: 298px;
+    height: 298px;
+}
+.pw-box-hd img {
+    width: 298px;
+    height: 298px;
+}
+.tips {
+    height: 44px;
+    padding: 8px 0 8px 125px;
+    background: #ff7674 url(../image/pc_icon_shaoma.png) 50px 8px no-repeat;
+}
+.tips p{
+    font-size: 14px;
+    line-height: 22px;
+    color: #fff;
+    font-weight: 700;
+}
+.p-w-sidebar {
+    float: left;
+    width: 379px;
+    height: 421px;
+    padding-left: 50px;
+    margin-top: -20px;
+    background: url(//storage.360buyimg.com/payment-assets/pc/icon/phone-bg.png) 50px 0 no-repeat;
+}
+.payment-change .pc-wrap {
+    display: block;
+    height: 60px;
+    line-height: 56px;
+    padding: 0 20px;
+}
+.payment-change .pc-wrap strong {
+    color: #67a4ff;
+    font-size: 14px;
+    float: left;
+    cursor: pointer;
+}
+.pc-wrap-arrow-l {
+    float: left;
+    margin-right: 15px;
+    font-style: normal;
+    font-size: 22px;
+    width: 20px;
+    text-align: center;
+    color: #2fa1dd;
+}
+.pf-wrap {
+    padding: 20px 0px;
+    text-align: center;
+    border-top: 1px solid #dddddd;
+}

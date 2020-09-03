@@ -1,0 +1,278 @@
+body {
+    background-color: #f5f5f5;
+}
+.main {
+    height: 455px;
+}
+.mainContent {
+    width: 980px;
+    height: 455px;
+    margin-left: 220px;
+}
+/*焦点图*/
+.focus {
+    width: 720px;
+    height: 445px;
+    position: relative;
+    margin-top: 10px;
+}
+.big-banner {
+    width: 720px;
+    height: 445px;
+}
+/*左右箭头*/
+.focus .arrow-r,.focus .arrow-l {
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 35px;
+    background-color: rgba(0,0,0,0.1);
+    top: 50%;
+    margin-top: -35px;
+    text-align: center;
+    line-height: 35px;
+}
+.focus .arrow-l {
+    left: 0px;
+    border-radius: 0px 18px 18px 0px;
+}
+.focus .arrow-r {
+    right: 0px;
+    border-radius: 18px 0px 0px 18px;
+}
+.triangleLeftAndRight {
+    font-family: icommon;
+    font-size: 18px;
+    font-weight: bolder;
+    color: white;
+}
+/*小圆点*/
+.focus-dot {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    margin-left: -50px;
+}
+
+.focus-dot li {
+    float: left;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #e1e1e1;
+    margin-right: 6px;
+}
+.focus-dot li:hover {
+    background-color: white;
+}
+/*新闻列表*/
+.newsflash {
+    width: 250px;
+    height: 445px;
+    background-color: white;
+    margin-top: 10px;
+}
+.news {
+    height: 170px;
+}
+.news-title {
+    padding: 5px 10px;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 16px;
+    font-weight: bold;
+}
+.news-list {
+    border-bottom: 1px solid #eeeeee;
+}
+.news-list li{
+    margin: 10px 10px;
+}
+/*生活服务*/
+.lifeServer {
+    height: 285px;
+}
+.lifeServer li {
+    width: 62px;
+    height: 60px;
+    float: left;
+    text-align: center;
+}
+.lifeServer a{
+    color: black;
+}
+.lifeServer-item{
+    height: 24px;
+    width: 24px;
+    display: inline-block;
+    background: url("../image/lifrservice.png") no-repeat;
+    margin:8px 0px 0px 2px;
+}
+
+.lifeServer-icon-1 {
+    background-position: 0 0 ;
+}
+.lifeServer-icon-2 {
+    background-position: 0 -87px;
+}
+.lifeServer-icon-3 {
+    background-position: 0 -44px ;
+}
+.lifeServer-icon-4 {
+    background-position: 0 -132px ;
+}
+.lifeServer-icon-5 {
+    background-position: 0 -176px ;
+}
+.lifeServer-icon-6 {
+    background-position: 0 -220px;
+}
+.lifeServer-icon-7 {
+    background-position: 0 -264px;
+}
+.lifeServer-icon-8 {
+    background-position: 0 -308px;
+}
+/*秒杀*/
+.seckill {
+    height: 260px;
+    margin-top: 20px;
+}
+.seckillc-countdown {
+    display: block;
+    width: 200px;
+    height: 260px;
+    background: url("../image/seckillback.png");
+}
+.countdown-title {
+    line-height: 35px;
+    margin-top: 35px;
+    font-size: 26px;
+    color: white;
+    text-align: center;
+}
+.seckill-list {
+    width: 1000px;
+    height: 260px;
+    background-color: white;
+}
+.seckill-list li {
+    width: 198px;
+    height: 258px;
+    float: left;
+    border-right: 1px solid #eeeeee;
+}
+.seckill-list .secskill-item-last {
+    border-right: none;
+}
+.skill-item-img {
+    width: 140px;
+    height: 140px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.skill-item-img img{
+    width: 100%;
+    height: 100%;
+}
+.skill-item-img img:hover{
+   filter: brightness(120%);
+}
+.skill-item-title {
+    display: block;
+    margin:10px 0px 10px 20px;
+    cursor: pointer;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+    color: black;
+    font-weight: 500;
+}
+.seckill-item-price {
+    width: 160px;
+    height: 24px;
+    margin: 0 auto;
+    border: 1px solid #e1251b;
+    line-height: 24px;
+}
+.price-miaosha {
+    width: 92px;
+    display: inline-block;
+    text-align: center;
+    background-color: #e1251b;
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+}
+.price-miaosha span {
+    font-size: 16px;
+}
+.price-origin {
+    width: 68px;
+    display: inline-block;
+    text-align: center;
+    background-color: white;
+    color: #999999;
+}
+.floor {
+    margin-top: 20px;
+}
+.guoji {
+    width: 1200px;
+    height: 632px;
+}
+.floor-left {
+    width: 240px;
+    height: 632px;
+}
+.floor-item-content {
+    width: 240px;
+    height: 316px;
+    background-color: #c81623;
+}
+.floor-item-img {
+    width: 240px;
+    height: 316px;
+}
+
+/*猜你喜欢  推荐*/
+.recommend {
+    margin-top: 20px;
+}
+.recommend-title {
+    height: 42px;
+    text-align: center;
+}
+.like {
+    font-size: 16px;
+    color: #e33333;
+}
+.tex-context {
+    color: #666666;
+    font-size: 18px;
+    font-weight: 300;
+}
+.tex-context:before {
+    content: '——';
+    margin-right: 10px;
+}
+.tex-context:after {
+    content: '——';
+    margin-left: 10px;
+}
+/*猜你喜欢内容列表*/
+wonderful-item{
+    width: 235px;
+    height: 319px;
+    background-color: cornflowerblue;
+    margin-right: 8px;
+    float: left;
+}
+.card-item {
+    display: block;
+    height: 315px;
+}
+.item-pic img{
+    width: 185px;
+    height: 185px;
+}

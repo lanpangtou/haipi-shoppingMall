@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>嗨皮haipi.com--理想生活上嗨皮</title>
+    <meta name="description" content="嗨皮，中国线上购物的地标网站，亚洲超大的综合性购物平台，拥有10万多品牌商家。每日发布大量国内外商品！正品网购，上嗨皮！嗨皮千万大牌正品,品类全，一站购，支付安全，退换无忧！理想生活上嗨皮!">
+    <meta name="keywords" content="商城,网上购物,网购,进口食品,美容护理,母婴玩具,家用电器,手机数码,家居生活,服饰内衣,营养保健,钟表珠宝,饰品箱包,汽车生活,图书音像,礼品卡">
+    <link rel="icon" href="image/icon.png"  type="image/x-icon">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link  rel="stylesheet" href="css/reset.css">
+    <link  rel="stylesheet" href="css/commen.css">
+    <link  rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+
+<div id="homeApp">
+    <shortcut></shortcut>
+    <div class="header-container">
+    <!--        header start-->
+        <div class="header centre">
+            <!--        logo-->
+            <div class="logo">
+                <h1><a href="index.html" title="嗨皮">嗨皮</a></h1>
+            </div>
+            <!--        搜索-->
+            <div class="search">
+                <input type="text" class="search-text fl" placeholder="搜索 嗨皮/商品">
+                <button class="search-btn fl">搜索</button>
+            </div>
+            <!--        热词-->
+            <div class="keywords">
+                <a href="#" class="style-color-red">购机赠优惠</a>
+                <a href="#" class="style-color-red">0元设计</a>
+                <a href="#">猪肉</a>
+                <a href="#">手机</a>
+                <a href="#">补水面膜</a>
+                <a href="#">品质家纺</a>
+                <a href="#">直降3000</a>
+                <a href="#">iPhone</a>
+                <a href="#">每100-50</a>
+            </div>
+            <!--        购物车-->
+            <div class="shopcar">
+                <i class="shopcar-icon"></i>
+                <i class="count" >{{cartsize}}</i>
+                <a href="http://www.haipi.com/mycart.html" class="style-color-red">我的购物车</a>
+            </div>
+        </div>
+    <!--        header end-->
+
+    <!--        nav start-->
+        <div class="nav">
+            <div class="centre">
+    <!--            dropdown category-->
+                <div class="dropdown fl">
+                    <div class="dt">全部商品分类</div>
+                    <div class="dd"  style="display: block">
+                        <ul>
+                            <li class="category-item">
+                                <a href="#">美妆</a>
+                                /<a href="#">个人护理</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="#">女鞋</a>
+                                /<a href="#">男鞋</a>
+                                /<a href="#">箱包</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="#">女装</a>
+                                /<a href="#">内衣</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="#">男装</a>
+                                /<a href="#">运动户外</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="#">腕表</a>
+                                /<a href="#">眼镜</a>
+                                /<a href="#">珠宝饰品</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="#">手机</a>
+                                /<a href="#">数码</a>
+                                /<a href="#">电脑办公</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="#">零食</a>
+                                /<a href="#">茶酒</a>
+                                /<a href="#">进口食品</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="#">大家电</a>
+                                /<a href="#">生活电器</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="#">汽车</a>
+                                /<a href="#">配件</a>
+                                /<a href="#">用品</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="#">家纺</a>
+                                /<a href="#">家饰</a>
+                                /<a href="#">鲜花</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="#">医药保健</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="#">厨具</a>
+                                /<a href="#">收纳</a>
+                                /<a href="#">宠物</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="#">图书音像</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="#">家用电器</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="#">手机</a>
+                                /<a href="#">运营商</a>
+                                /<a href="#">数码</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    <!--            nav-->
+                <div class="nav-items fl">
+                    <ul>
+                        <li><a href="#" class="style-color-red style-font-b">秒杀</a></li>
+                        <li><a href="#" class="style-color-red style-font-b">嗨皮会员</a></li>
+                        <li><a href="#">优惠卷</a></li>
+                        <li><a href="#">嗨皮超市</a></li>
+                        <li><a href="#">品牌闪购</a></li>
+                        <li><a href="#">拍卖</a></li>
+                        <li><a href="#">嗨皮生鲜</a></li>
+                        <li><a href="#">嗨皮金融</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    <!--        nav end-->
+    </div>
+<!--        main start-->
+    <div class="main">
+        <div class="centre">
+            <div class="mainContent">
+<!--                    焦点图-->
+                <div class="focus fl">
+                    <a class="arrow-l" href="#"><i class="triangleLeftAndRight"></i></a>
+                    <a class="arrow-r" href="#"><i class="triangleLeftAndRight"></i></a>
+                    <ul>
+
+                        <li>
+                            <a href="#">
+                                <img class="big-banner" src="image/banner2.jpg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="focus-dot">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+<!--                    新闻列表-->
+                <div class="newsflash fr">
+                    <div class="news">
+                        <p class="news-title">嗨皮快报</p>
+                        <ul class="news-list">
+                            <li>公益机构开店全攻略</li>
+                            <li>卖家如何设置公益宝贝</li>
+                            <li>益起来商家招募即将截止</li>
+                            <li>腾讯等六家公司同台联合做公益</li>
+                            <li>嗨皮造物节之城市秘密</li>
+                        </ul>
+                    </div>
+                    <div class="lifeServer">
+                        <ul>
+                            <li><a href="#"><span class="lifeServer-item lifeServer-icon-1"></span><p>充话费</p></a></li>
+                            <li><a href="#"><span class="lifeServer-item lifeServer-icon-2"></span><p>旅行</p></a></li>
+                            <li><a href="#"><span class="lifeServer-item lifeServer-icon-3"></span><p>车险</p></a></li>
+                            <li><a href="#"><span class="lifeServer-item lifeServer-icon-4"></span><p>游戏</p></a></li>
+                            <li><a href="#"><span class="lifeServer-item lifeServer-icon-5"></span><p>彩票</p></a></li>
+                            <li><a href="#"><span class="lifeServer-item lifeServer-icon-6"></span><p>电影</p></a></li>
+                            <li><a href="#"><span class="lifeServer-item lifeServer-icon-7"></span><p>酒店</p></a></li>
+                            <li><a href="#"><span class="lifeServer-item lifeServer-icon-8"></span><p>理财</p></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--        main end-->
+<!--       秒杀 start-->
+    <div class="seckill centre">
+        <a href="#" class="seckillc-countdown fl">
+            <div class="countdown-title">嗨皮秒杀</div>
+        </a>
+        <div class="seckill-list fl">
+            <ul>
+                <li>
+                    <a href="/item/1.html">
+                        <div class="skill-item-img">
+                            <img src="image/pic1.jpg" alt="">
+                        </div>
+                        <h6 class="skill-item-title">华为P40 5G手机（白条12期免息） 亮黑色 8GB+128GB 全网通(5G)</h6>
+                        <div class="seckill-item-price">
+                            <span class="price-miaosha fl"><i>¥</i><span>3338.00</span></span>
+                            <span class="price-origin fl"><i>¥</i><span><del>6388.00</del></span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/item/1.html">
+                        <div class="skill-item-img">
+                            <img src="image/pic1.jpg" alt="">
+                        </div>
+                        <h6 class="skill-item-title">华为P40 5G手机（白条12期免息） 亮黑色 8GB+128GB 全网通(5G)</h6>
+                        <div class="seckill-item-price">
+                            <span class="price-miaosha fl"><i>¥</i><span>3338.00</span></span>
+                            <span class="price-origin fl"><i>¥</i><span><del>6388.00</del></span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/item/1.html">
+                        <div class="skill-item-img">
+                            <img src="image/pic1.jpg" alt="">
+                        </div>
+                        <h6 class="skill-item-title">华为P40 5G手机（白条12期免息） 亮黑色 8GB+128GB 全网通(5G)</h6>
+                        <div class="seckill-item-price">
+                            <span class="price-miaosha fl"><i>¥</i><span>3338.00</span></span>
+                            <span class="price-origin fl"><i>¥</i><span><del>6388.00</del></span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/item/2.html">
+                        <div class="skill-item-img">
+                            <img src="image/pic1.jpg" alt="">
+                        </div>
+                        <h6 class="skill-item-title">华为P40 5G手机（白条12期免息） 亮黑色 8GB+128GB 全网通(5G)</h6>
+                        <div class="seckill-item-price">
+                            <span class="price-miaosha fl"><i>¥</i><span>3338.00</span></span>
+                            <span class="price-origin fl"><i>¥</i><span><del>6388.00</del></span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/item/2.html">
+                        <div class="skill-item-img">
+                            <img src="image/pic1.jpg" alt="">
+                        </div>
+                        <h6 class="skill-item-title">华为P40 5G手机（白条12期免息） 亮黑色 8GB+128GB 全网通(5G)</h6>
+                        <div class="seckill-item-price">
+                            <span class="price-miaosha fl"><i>¥</i><span>3338.00</span></span>
+                            <span class="price-origin fl"><i>¥</i><span><del>6388.00</del></span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+<!--       秒杀 end-->
+
+<!--    楼层区 start-->
+<!--    <div class="floor centre">-->
+<!--        <div class="guoji">-->
+<!--            <div class="floor-title">嗨皮国际</div>-->
+<!--            <div class="floor-left">-->
+<!--            </div>-->
+
+<!--            <div class="floor-right">-->
+
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    楼层区 end-->
+
+<!--    猜你喜欢 推荐 start-->
+    <div class="recommend centre">
+        <h2 class="recommend-title">
+            <span class="tex-context"><i class="like"></i>猜你喜欢</span>
+        </h2>
+<!--        content列表-->
+        <div class="recommend-conten">
+            <ul>
+                <li class="wonderful-item">
+                    <a href="/item/1.html">手机</a>
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li>
+            </ul></li>
+        </div>
+    </div>
+<!--    猜你喜欢 推荐 end-->
+<!--        footer start-->
+    <div class="foot">
+        <div class="centre">
+<!--            mod service-->
+            <div class="mod-service">
+                <ul>
+                    <li>
+                        <h5 class="mod-service-icon mod-service-icon-duo"></h5>
+                        <div class="mod-service-title">
+                            品类齐全，轻松购物
+                        </div>
+                    </li>
+                    <li>
+                        <h5 class="mod-service-icon mod-service-icon-kuai"></h5>
+                        <div class="mod-service-title">
+                            多仓直发，极速配送
+                        </div>
+                    </li>
+                    <li>
+                        <h5 class="mod-service-icon mod-service-icon-hao"></h5>
+                        <div class="mod-service-title">
+                            正品行货，精致服务
+                        </div>
+                    </li>
+                    <li>
+                        <h5 class="mod-service-icon mod-service-icon-sheng"></h5>
+                        <div class="mod-service-title">
+                            天天低价，畅选无忧
+                        </div>
+                    </li>
+                </ul>
+            </div>
+<!--            mod help-->
+            <div class="mod-help">
+                <dl class="mod-help-list">
+                    <dt>购物指南</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">会员介绍</a></dd>
+                    <dd><a href="#">生活旅行</a></dd>
+                    <dd><a href="#">常见问题</a></dd>
+                    <dd><a href="#">联系客服</a></dd>
+                </dl>
+                <dl class="mod-help-list">
+                    <dt>配送方式</dt>
+                    <dd><a href="#">上门自提</a></dd>
+                    <dd><a href="#">211限时达</a></dd>
+                    <dd><a href="#">配送服务查询</a></dd>
+                    <dd><a href="#">配送费收取标准</a></dd>
+                    <dd><a href="#">海外配送</a></dd>
+                </dl>
+                <dl class="mod-help-list">
+                    <dt>支付方式</dt>
+                    <dd><a href="#">货到付款</a></dd>
+                    <dd><a href="#">在线支付</a></dd>
+                    <dd><a href="#">分期付款</a></dd>
+                    <dd><a href="#">公司转账</a></dd>
+                </dl>
+                <dl class="mod-help-list">
+                    <dt>售后服务</dt>
+                    <dd><a href="#">售后政策</a></dd>
+                    <dd><a href="#">价格保护</a></dd>
+                    <dd><a href="#">退款说明</a></dd>
+                    <dd><a href="#">返修/退换货</a></dd>
+                    <dd><a href="#">取消订单</a></dd>
+                </dl>
+                <dl class="mod-help-list">
+                    <dt>商家服务</dt>
+                    <dd><a href="#">天猫规则</a></dd>
+                    <dd><a href="#">商家入驻</a></dd>
+                    <dd><a href="#">商家中心</a></dd>
+                    <dd><a href="#">物流服务</a></dd>
+                    <dd><a href="#">嗨皮智库</a></dd>
+                    <dd><a href="#">运营服务</a></dd>
+                </dl>
+                <dl class="mod-help-list">
+                    <dt>购物指南</dt>
+                    <dd><a href="#">购物流程</a></dd>
+                    <dd><a href="#">会员介绍</a></dd>
+                    <dd><a href="#">生活旅行</a></dd>
+                    <dd><a href="#">常见问题</a></dd>
+                    <dd><a href="#">联系客服</a></dd>
+                </dl>
+            </div>
+        </div>
+<!--            mod copyright-->
+        <div class="mod-copyright">
+            <div class="centre">
+                <p class="footer-haipiInfo">关于嗨皮 帮助中心 开放平台 诚聘英才 联系我们 网站合作 法律声明 隐私权政策 知识产权 廉正举报 规则意见征集</p>
+                <p class="footer-otherlinks">嗨皮集团 | 嗨皮 | 聚划算 | 全球速卖通 | 嗨皮国际交易市场| 1688  | 嗨皮 | 嗨皮云计算 | AliOS | 嗨皮通信 | 嗨皮 | 嗨皮 | 嗨皮 | 嗨皮 | 嗨皮 | 嗨皮 | 嗨皮支付宝| 嗨皮安全</p>
+                <div class="footer-copyright">
+                    <p><span>增值电信业务经营许可证： 川B2-20117646</span> <span>市场名称登记证：工商网市字3357604119号</span> <span>出版物网络交易平台服务经营备案证： 新出发川备字第001号</span></p>
+                    <br>
+                    <p><span>互联网违法和不良信息举报电话：0571-5483755</span> <span>haipi.com 互联网药品信息服务资质证书编号：川-（经营性）-2017-6705  川公网安备 33010012400120号</span></p>
+                    <p><span>医疗器械网络交易服务第三方平台备案：（川）网械平台备字[2020]第00001号</span> 互联网药品交易服务资格证书：国A20150001</p>
+                    <P>四川省网络食品销售第三方平台提供者备案：川网食A33054302 14318举报</P>
+                    <p>© 2020-2050 HAIPI.COM 版权所有</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--        footer end-->
+</div>
+</body>
+
+<script src="/js/vue.js"></script>
+<script src="/js/axios.min.js"></script>
+<script src="/js/commen.js"></script>
+<script src="/js/qs.min.js"></script>
+<script>
+    var vm = new Vue({
+        el: "#homeApp",
+        data: {
+            cartsize: 0,
+        },
+        created() {
+          Hp.http.get("/cart/size/").then(res => {
+            this.cartsize = res.data;
+          })
+        },
+        components:{
+            shortcut: () => import("./js/page/shortcut.js")
+        }
+    });
+</script>
+<script>
+    window.onselectstart = ()=>{return false};
+</script>
+</html>

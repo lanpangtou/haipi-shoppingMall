@@ -1,0 +1,103 @@
+.account {
+    padding: 10px 0px;
+}
+/*side*/
+.m-left {
+    width: 200px;
+    background-color: #f2f2f2;
+}
+.list-item dt {
+    padding: 8px;
+    font-weight: 600;
+    font-size: 13px;
+}
+.list-item dd {
+    line-height: 28px;
+    text-align: center;
+}
+.list-item dd a {
+    font-size: 13px;
+}
+/*right*/
+.m-right {
+    width: 990px;
+}
+.r-body {
+    padding: 0px 10px;
+}
+.order-action-title {
+    width: 100%;
+    background-color: #f2f2f2;
+    height: 30px;
+}
+.r-body table {
+    width: 100%;
+}
+.r-body th:nth-child(1),.r-body td:nth-child(1){
+    width: 40%;
+}
+.r-body th:nth-child(2),.r-body td:nth-child(2){
+    width: 10%;
+    text-align: center;
+}
+.r-body th:nth-child(3),.r-body td:nth-child(3){
+    width: 10%;
+    text-align: center;
+}
+.r-body th:nth-child(4),.r-body td:nth-child(4){
+    width: 10%;
+    text-align: center;
+}
+.r-body th:nth-child(5),.r-body td:nth-child(5){
+    width: 10%;
+    text-align: center;
+}
+.order-list-item {
+    margin: 10px 0px;
+    border: 1px solid #aed8ff;
+}
+.order-item-title tr td{
+    background-color: #eaf8ff;
+    width: 100%;
+    height: 40px;
+    padding: 0px 10px;
+}
+.order-time-num {
+    display: inline-block;
+    width: 40%;
+}
+.o-time {
+    font-weight: 600;
+    padding: 0px 5px;
+}
+.goods-info {
+    padding: 10px 5px;
+}
+.p-img image{
+    width: 80px;
+    height: 80px;
+}
+.item-mesg {
+    margin-left: 90px;
+}
+.props-txt {
+    margin-top: 10px;;
+}
+.p-consignee p,.p-price p,.p-status p,.p-action p{
+    line-height: 20px;
+}
+.p-price strong {
+     font-weight: 600;
+}
+.action-btn {
+    padding: 5px 12px;
+    background-color: #66b6ff;
+    border-radius: 3px;
+    color: #ffffff;
+    font-weight: 600;
+}
+.action-btn:hover {
+    color: #ffffff;
+    background-color: #118adb;
+}
+

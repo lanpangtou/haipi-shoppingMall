@@ -1,0 +1,101 @@
+.centre {
+    width: 1200px;
+    margin: 0 auto;
+}
+.header {
+    height: 110px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.13);
+    position: relative;
+}
+.head-con {
+    height: 110px;
+    position: relative;
+}
+.logo {
+    display: block;
+    width: 175px;
+    height: 56px;
+    position: absolute;
+    left: 0px;
+    bottom: 20px;
+    background: url("../image/logo.png") no-repeat;
+    background-size: contain;
+}
+.title {
+    position: absolute;
+    bottom: 33px;
+    left: 175px;
+    font-size: 22px;
+}
+.to-login {
+    font-size: 16px;
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+}
+.to-login a {
+    color: #d44852;
+}
+/*注册表单*/
+.reg-form {
+    width: 550px;
+    height: 400px;
+    margin: 80px auto;
+    padding-left: 140px;
+}
+.reg-form li {
+    margin-bottom: 16px;
+}
+.reg-form label {
+    display: inline-block;
+    width: 60px;
+    font-size: 14px;
+    text-align: right;
+    color: #8c8c8c;
+}
+.reg-input {
+    width: 240px;
+    height: 33px;
+    border: 1px solid #cccccc;
+    margin: 0 5px;
+    padding-left: 10px;
+}
+.error-txt,.success-txt {
+    color: #d44852;
+    margin-top: 5px;
+ }
+.error-icon,.success-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../image/error_icon.png") no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+    margin-top: -3px;
+}
+.success-icon {
+    background: url("../image/success_icon.png") no-repeat;
+    background-size: contain;
+}
+.success-txt {
+    color: #7ac23c;
+    margin-top: 5px;
+}
+.reg-btn {
+    display: inline-block;
+    padding: 10px 40px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #E2231A;
+    text-align: center;
+    font-family: 宋体;
+    cursor: pointer;
+    margin: 30px 0px 0px 90px;
+}
+/*foot*/
+.pf-wrap {
+    padding: 20px 0px;
+    text-align: center;
+    border-top: 1px solid #dddddd;
+}

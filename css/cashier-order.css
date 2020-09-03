@@ -1,0 +1,127 @@
+.clearfix:after {
+    content:" ";
+    height: 0;
+    display: block;
+    clear:both;
+}
+.clearfix {
+    zoom: 1;
+}
+.centre {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+.s-wrap {
+    height: 75px;
+}
+.s-logo {
+    position: absolute;
+    width: 170px;
+    height: 60px;
+    top: 15px;
+    left: 0px;
+}
+.s-logo img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.s-right {
+    padding-top: 30px;
+    float: right;
+}
+.s-title {
+    position: absolute;
+    top: 30px;
+    left: 175px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.s-right .s-item {
+    height: 20px;
+    line-height: 20px;
+    padding: 0 11px 0 12px;
+    float: left;
+}
+.s-right .s-div {
+    float: left;
+}
+.main {
+    padding-bottom: 50px;
+    background-color: #fff;
+}
+/*main*/
+.order-wrap {
+    height: 110px;
+}
+.o-info-left {
+    float: left;
+}
+.o-info-left-detail {
+    margin-top: 30px;
+}
+.o-info-left-detail-item-title,.o-info-left-detail-item-title span {
+    color: #333;
+    font-size: 14px;
+    line-height: 180%;
+}
+.o-info-right {
+    float: right;
+}
+.o-info-right-price {
+    padding: 30px 10px 10px 0px;
+    font-size: 14px;
+}
+.o-info-right-price .pay-price {
+    font-size: 16px;
+    color: #e31613;
+    padding: 0 2px 0 2px;
+    font-weight: 700;
+}
+.o-info-right-btn {
+    padding-right: 10px;
+    text-align: right;
+}
+.od-btn {
+    color: #67a4ff;
+}
+.order-info-detail {
+    padding: 10px 30px;
+    line-height: 200%;
+    border-top: 1px solid #dddddd;
+}
+.payment-wrap {
+    margin-top: 25px;
+}
+.payment-op {
+    height: 300px;
+    padding: 30px 10px;
+    box-shadow: 0 6px 32px rgba(0,0,0,.13);
+}
+.payment-op-item {
+    display: inline-block;
+    padding: 0px 40px;
+}
+.payment-op-item:hover {
+    color: #E2231A;
+    cursor: pointer;
+}
+.payment-op-item-logo {
+    width: 26px;
+    height: 26px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.payment-op-item-word {
+    display: inline;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+/*foot*/
+.pf-wrap {
+    padding: 20px 0px;
+    text-align: center;
+    border-top: 1px solid #dddddd;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人注册</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="image/icon.png"  type="image/x-icon">
+    <link  rel="stylesheet" href="css/reset.css">
+    <link  rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    <div class="header">
+        <div class="head-con centre">
+            <a class="logo" href="index.html"></a>
+            <div class="title">欢迎注册</div>
+            <div class="to-login">已有账号？ <a href="login.html" target="_blank">马上登录></a></div>
+        </div>
+        <div class="reg-form" id="registerApp">
+            <form action="">
+                <ul>
+                    <li>
+                        <label for="tel">用户名:</label>
+                        <input class="reg-input" type="text" v-model="user.username" @blur="check()" name="username" id="tel" placeholder="用户名">
+<!--                        <span class="success-txt">-->
+<!--                            <i class="success-icon"></i>-->
+<!--                        </span>-->
+                    </li>
+                    <li>
+                        <label>密码:</label>
+                        <input class="reg-input" type="text" v-model="user.password" name="password" placeholder="密码">
+<!--                        <span class="error-txt">-->
+<!--                            <i class="error-icon"></i>-->
+<!--                            密码不能为空-->
+<!--                        </span>-->
+                    </li>
+                    <li>
+                        <label>确认密码:</label>
+                        <input class="reg-input" type="text" v-model="user.confirmPassword" name="confirmPassword" placeholder="确认密码">
+<!--                        <span class="error-txt">-->
+<!--                            <i class="error-icon"></i>-->
+<!--                            两次密码不一样-->
+<!--                        </span>-->
+                    </li>
+                    <li>
+                        <label>验证码:</label>
+                        <input class="reg-input" style="width: 90px" type="text" v-model="user.code" name="code" placeholder="验证码">
+                        <img :src="codeUrl" style="vertical-align: bottom" @click="changeCode()" height="33px" width="140px" alt="验证码">
+<!--                        <span class="success-txt">-->
+<!--                            <i class="success-icon"></i>-->
+<!--                            恭喜您输入正确-->
+<!--                        </span>-->
+                    </li>
+
+                </ul>
+            </form>
+            <button href="#" class="reg-btn" @click="submit()">马上注册</button>
+        </div>
+        <div class="p-foot">
+            <div class="pf-wrap centre">
+                <p>Copyright © 2020-2020 嗨皮HAIPI.com 版权所有</p>
+            </div>
+        </div>
+    </div>
+    <script src="/js/vue.js"></script>
+    <script src="/js/axios.min.js"></script>
+    <script src="/js/commen.js"></script>
+    <script src="/js/validate.js"></script>
+    <script src="/js/qs.min.js"></script>
+    <script type="text/javascript">
+        var vm = new Vue({
+            el: "#registerApp",
+            data: {
+                user: {
+                    username: "",
+                    password: "",
+                    confirmPassword: "",
+                    code: "",
+                },
+                codeUrl: baseUrl + "/user/code",
+                mesg: "",
+            },
+            methods: {
+                check() {
+                    Hp.http.get("user/check/" + this.user.username).then(res => {
+                            console.log(res.data);
+                            this.mesg = "用户名已存在";
+                    })
+                },
+                changeCode() {
+                    var date = new Date();
+                    this.codeUrl += ("?"+date.getTime());
+                },
+                submit() {
+                    Hp.http.post("user/register",window.Qs.stringify(this.user)).
+                        then(res => {
+                            if (res.status == 201) {
+                                console.log(res);
+                                alert("注册成功,即将跳转到登录页")
+                                window.location = "/login.html";
+                            }
+                    }).catch((res) => {
+                        console.log(res);
+                        alert("注册失败")
+                    })
+                }
+            }
+        })
+    </script>
+    <script>
+        window.onselectstart = ()=>{return false};
+    </script>
+</body>
+</html>

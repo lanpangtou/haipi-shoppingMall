@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品已成功加入购物车</title>
+    <meta name="description" content="嗨皮，中国线上购物的地标网站，亚洲超大的综合性购物平台，拥有10万多品牌商家。每日发布大量国内外商品！正品网购，上嗨皮！嗨皮千万大牌正品,品类全，一站购，支付安全，退换无忧！理想生活上嗨皮!">
+    <meta name="keywords" content="商城,网上购物,网购,进口食品,美容护理,母婴玩具,家用电器,手机数码,家居生活,服饰内衣,营养保健,钟表珠宝,饰品箱包,汽车生活,图书音像,礼品卡">
+    <link rel="icon" href="image/icon.png"  type="image/x-icon">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link  rel="stylesheet" href="css/reset.css">
+    <link  rel="stylesheet" href="css/commen.css">
+    <link  rel="stylesheet" href="css/addcar.css">
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+    <!--    快捷导航栏-->
+    <div class="shortcut">
+        <div class="centre">
+            <div class="fl">
+                <ul>
+                    <li><i class="localtion"></i><a href="#">四川</a></li>
+                    <li>&nbsp;&nbsp; 嗨，欢迎来嗨皮</li>
+                </ul>
+            </div>
+            <div class="fr">
+                <ul>
+                    <li>
+                        你好，<a href="login.html">请登录</a> &nbsp;&nbsp;
+                        <a href="register.html" class="style-color-red">免费注册</a>
+                    </li>
+                    <li class="spacer"></li>
+                    <li>
+                        <a href="#">我的嗨皮</a>
+                        <i class="triangle"></i></li>
+                    <li class="spacer"></li>
+                    <li><a href="#">我的订单</a></li>
+                    <li class="spacer"></li>
+                    <li>
+                        <a href="#">收藏夹</a>
+                        <i class="triangle"></i>
+                    </li>
+                    <li class="spacer"></li>
+                    <li><a href="#"><i class="icommon"></i>手机版</a></li>
+                    <li class="spacer"></li>
+                    <li><a href="#">嗨皮网</a></li>
+                    <li class="spacer"></li>
+                    <li>
+                        <a href="#">商家支持</a>
+                        <i class="triangle"></i>
+                    </li>
+                    <li class="spacer"></li>
+                    <li>
+                        <i class="icommon"></i>
+                        <a href="#">网站导航</a>
+                        <i class="triangle"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="header-container">
+        <!--        header start-->
+        <div class="header centre">
+            <!--        logo-->
+            <div class="logo">
+                <h1><a href="index.html" title="嗨皮">嗨皮</a></h1>
+            </div>
+            <!--        搜索-->
+            <div class="search">
+                <input type="text" class="search-text fl" placeholder="搜索 嗨皮/商品">
+                <button class="search-btn fl">搜索</button>
+            </div>
+            <!--        热词-->
+            <div class="keywords">
+                <a href="#" class="style-color-red">购机赠优惠</a>
+                <a href="#" class="style-color-red">0元设计</a>
+                <a href="#">猪肉</a>
+                <a href="#">手机</a>
+                <a href="#">补水面膜</a>
+                <a href="#">品质家纺</a>
+                <a href="#">直降3000</a>
+                <a href="#">iPhone</a>
+                <a href="#">每100-50</a>
+            </div>
+            <!--        购物车-->
+            <div class="shopcar">
+                <i class="shopcar-icon"></i>
+                <i class="count" >0</i>
+                <a href="#" class="style-color-red">我的购物车</a>
+            </div>
+        </div>
+        <!--        header end-->
+
+        <!--        nav start-->
+        <div class="nav">
+            <div class="centre">
+                <!--            dropdown category-->
+                <div class="dropdown fl">
+                    <div class="dt">全部商品分类</div>
+                    <div class="dd"  style="display: none">
+                        <ul>
+                            <li class="category-item">
+                                <a href="#">美妆</a>
+                                /<a href="#">个人护理</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="#">女鞋</a>
+                                /<a href="#">男鞋</a>
+                                /<a href="#">箱包</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="#">女装</a>
+                                /<a href="#">内衣</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="#">男装</a>
+                                /<a href="#">运动户外</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="#">腕表</a>
+                                /<a href="#">眼镜</a>
+                                /<a href="#">珠宝饰品</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="#">手机</a>
+                                /<a href="#">数码</a>
+                                /<a href="#">电脑办公</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="#">零食</a>
+                                /<a href="#">茶酒</a>
+                                /<a href="#">进口食品</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="#">大家电</a>
+                                /<a href="#">生活电器</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="#">汽车</a>
+                                /<a href="#">配件</a>
+                                /<a href="#">用品</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="#">家纺</a>
+                                /<a href="#">家饰</a>
+                                /<a href="#">鲜花</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="#">医药保健</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="#">厨具</a>
+                                /<a href="#">收纳</a>
+                                /<a href="#">宠物</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="#">图书音像</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="#">家用电器</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="#">手机</a>
+                                /<a href="#">运营商</a>
+                                /<a href="#">数码</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--            nav-->
+                <div class="nav-items fl">
+                    <ul>
+                        <li><a href="#" class="style-color-red style-font-b">秒杀</a></li>
+                        <li><a href="#" class="style-color-red style-font-b">嗨皮会员</a></li>
+                        <li><a href="#">优惠卷</a></li>
+                        <li><a href="#">嗨皮超市</a></li>
+                        <li><a href="#">品牌闪购</a></li>
+                        <li><a href="#">拍卖</a></li>
+                        <li><a href="#">嗨皮生鲜</a></li>
+                        <li><a href="#">嗨皮金融</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--        nav end-->
+    </div>
+
+    <div class="main">
+<!--       加入购物车-->
+        <div class="success-wrap">
+            <div class="centre">
+                <div class="success-box">
+                    <div class="success-info fl">
+                        <div class="success-top">
+                            <b class="success-icon"></b>
+                            <h3 class="successtocar-text">商品已成功加入购物车！</h3>
+                        </div>
+                        <div class="p-item">
+                            <div class="p-img fl">
+                                <img src="image/item3.jpg" alt="">
+                            </div>
+                            <div class="p-info fl">
+                                <a href="#">荣耀20青春版 AMOLED屏幕指纹 4000mAh大电池 20W快充 4800万 手机 6GB+64GB 冰岛幻境</a>
+                            </div>
+                            <div class="p-extra">
+                                <span class="extra-text">颜色：冰岛幻境</span>
+                                <span class="extra-text">尺码：全网通（6GB 64GB）</span>
+                                <span class="extra-text">/ 数量：1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="success-btns fr">
+                        <div class="">
+                            <a class="btn-todetail" href="javascript:;" onclick="history.back(-1)">查看商品详情</a>
+                            <a class="btn-toaddcar" href="mycart.html">去购物车结算<b></b></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--       推荐 类似的-->
+        <div class="centre">
+            <div class="similar">
+                <div class="mt">
+                    <h3>购买了该商品的用户还购买了</h3>
+                </div>
+                <div class="goods-list">
+                    <ul>
+                        <li>
+                            <div class="item">
+                                <div class="p-img fl">
+                                    <a href="#"><img src="image/item4.jpg" alt=""></a>
+                                </div>
+                                <div class="p-name fl">
+                                    <a href="#">荣耀20青春版手机全网通 冰岛幻境 全网通 （6G+64GB）</a>
+                                </div>
+                                <div class="p-price fl">
+                                    <strong>
+                                        ￥1048.00
+                                    </strong>
+                                </div>
+                                <div class="p-btn fl">
+                                    <b></b>
+                                    <a href="cart.html">加入购物车</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="p-img fl">
+                                    <a href="#"><img src="image/item4.jpg" alt=""></a>
+                                </div>
+                                <div class="p-name fl">
+                                    <a href="#">荣耀20青春版手机全网通 冰岛幻境 全网通 （6G+64GB）</a>
+                                </div>
+                                <div class="p-price fl">
+                                    <strong>
+                                        ￥1048.00
+                                    </strong>
+                                </div>
+                                <div class="p-btn fl">
+                                    <b></b>
+                                    <a href="cart.html">加入购物车</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="p-img fl">
+                                    <a href="#"><img src="image/item4.jpg" alt=""></a>
+                                </div>
+                                <div class="p-name fl">
+                                    <a href="#">荣耀20青春版手机全网通 冰岛幻境 全网通 （6G+64GB）</a>
+                                </div>
+                                <div class="p-price fl">
+                                    <strong>
+                                        ￥1048.00
+                                    </strong>
+                                </div>
+                                <div class="p-btn fl">
+                                    <b></b>
+                                    <a href="cart.html">加入购物车</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="p-img fl">
+                                    <a href="#"><img src="image/item4.jpg" alt=""></a>
+                                </div>
+                                <div class="p-name fl">
+                                    <a href="#">荣耀20青春版手机全网通 冰岛幻境 全网通 （6G+64GB）</a>
+                                </div>
+                                <div class="p-price fl">
+                                    <strong>
+                                        ￥1048.00
+                                    </strong>
+                                </div>
+                                <div class="p-btn fl">
+                                    <b></b>
+                                    <a href="cart.html">加入购物车</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="p-img fl">
+                                    <a href="#"><img src="image/item4.jpg" alt=""></a>
+                                </div>
+                                <div class="p-name fl">
+                                    <a href="#">荣耀20青春版手机全网通 冰岛幻境 全网通 （6G+64GB）</a>
+                                </div>
+                                <div class="p-price fl">
+                                    <strong>
+                                        ￥1048.00
+                                    </strong>
+                                </div>
+                                <div class="p-btn fl">
+                                    <b></b>
+                                    <a href="cart.html">加入购物车</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="p-img fl">
+                                    <a href="#"><img src="image/item4.jpg" alt=""></a>
+                                </div>
+                                <div class="p-name fl">
+                                    <a href="#">荣耀20青春版手机全网通 冰岛幻境 全网通 （6G+64GB）</a>
+                                </div>
+                                <div class="p-price fl">
+                                    <strong>
+                                        ￥1048.00
+                                    </strong>
+                                </div>
+                                <div class="p-btn fl">
+                                    <b></b>
+                                    <a href="cart.html">加入购物车</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="p-img fl">
+                                    <a href="#"><img src="image/item4.jpg" alt=""></a>
+                                </div>
+                                <div class="p-name fl">
+                                    <a href="#">荣耀20青春版手机全网通 冰岛幻境 全网通 （6G+64GB）</a>
+                                </div>
+                                <div class="p-price fl">
+                                    <strong>
+                                        ￥1048.00
+                                    </strong>
+                                </div>
+                                <div class="p-btn fl">
+                                    <b></b>
+                                    <a href="cart.html">加入购物车</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="p-img fl">
+                                    <a href="#"><img src="image/item4.jpg" alt=""></a>
+                                </div>
+                                <div class="p-name fl">
+                                    <a href="#">荣耀20青春版手机全网通 冰岛幻境 全网通 （6G+64GB）</a>
+                                </div>
+                                <div class="p-price fl">
+                                    <strong>
+                                        ￥1048.00
+                                    </strong>
+                                </div>
+                                <div class="p-btn fl">
+                                    <b></b>
+                                    <a href="cart.html">加入购物车</a>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="panel-nav">
+                    <ul>
+                        <li class="s-nav-item current">1</li>
+                        <li class="s-nav-item">2</li>
+                        <li class="s-nav-item">3</li>
+                        <li class="s-nav-item">4</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="centre">
+            <div class="similar">
+                <div class="mt">
+                    <h3>您可能还需要</h3>
+                </div>
+                <div class="goods-list">
+                    <ul>
+                        <li>
+                            <div class="item">
+                                <div class="p-img fl">
+                                    <a href="#"><img src="image/item4.jpg" alt=""></a>
+                                </div>
+                                <div class="p-name fl">
+                                    <a href="#">荣耀20青春版手机全网通 冰岛幻境 全网通 （6G+64GB）</a>
+                                </div>
+                                <div class="p-price fl">
+                                    <strong>
+                                        ￥1048.00
+                                    </strong>
+                                </div>
+                                <div class="p-btn fl">
+                                    <b></b>
+                                    <a href="cart.html">加入购物车</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="p-img fl">
+                                    <a href="#"><img src="image/item4.jpg" alt=""></a>
+                                </div>
+                                <div class="p-name fl">
+                                    <a href="#">荣耀20青春版手机全网通 冰岛幻境 全网通 （6G+64GB）</a>
+                                </div>
+                                <div class="p-price fl">
+                                    <strong>
+                                        ￥1048.00
+                                    </strong>
+                                </div>
+                                <div class="p-btn fl">
+                                    <b></b>
+                                    <a href="cart.html">加入购物车</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="p-img fl">
+                                    <a href="#"><img src="image/item4.jpg" alt=""></a>
+                                </div>
+                                <div class="p-name fl">
+                                    <a href="#">荣耀20青春版手机全网通 冰岛幻境 全网通 （6G+64GB）</a>
+                                </div>
+                                <div class="p-price fl">
+                                    <strong>
+                                        ￥1048.00
+                                    </strong>
+                                </div>
+                                <div class="p-btn fl">
+                                    <b></b>
+                                    <a href="cart.html">加入购物车</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="p-img fl">
+                                    <a href="#"><img src="image/item4.jpg" alt=""></a>
+                                </div>
+                                <div class="p-name fl">
+                                    <a href="#">荣耀20青春版手机全网通 冰岛幻境 全网通 （6G+64GB）</a>
+                                </div>
+                                <div class="p-price fl">
+                                    <strong>
+                                        ￥1048.00
+                                    </strong>
+                                </div>
+                                <div class="p-btn fl">
+                                    <b></b>
+                                    <a href="cart.html">加入购物车</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="p-img fl">
+                                    <a href="#"><img src="image/item4.jpg" alt=""></a>
+                                </div>
+                                <div class="p-name fl">
+                                    <a href="#">荣耀20青春版手机全网通 冰岛幻境 全网通 （6G+64GB）</a>
+                                </div>
+                                <div class="p-price fl">
+                                    <strong>
+                                        ￥1048.00
+                                    </strong>
+                                </div>
+                                <div class="p-btn fl">
+                                    <b></b>
+                                    <a href="cart.html">加入购物车</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="p-img fl">
+                                    <a href="#"><img src="image/item4.jpg" alt=""></a>
+                                </div>
+                                <div class="p-name fl">
+                                    <a href="#">荣耀20青春版手机全网通 冰岛幻境 全网通 （6G+64GB）</a>
+                                </div>
+                                <div class="p-price fl">
+                                    <strong>
+                                        ￥1048.00
+                                    </strong>
+                                </div>
+                                <div class="p-btn fl">
+                                    <b></b>
+                                    <a href="cart.html">加入购物车</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="p-img fl">
+                                    <a href="#"><img src="image/item4.jpg" alt=""></a>
+                                </div>
+                                <div class="p-name fl">
+                                    <a href="#">荣耀20青春版手机全网通 冰岛幻境 全网通 （6G+64GB）</a>
+                                </div>
+                                <div class="p-price fl">
+                                    <strong>
+                                        ￥1048.00
+                                    </strong>
+                                </div>
+                                <div class="p-btn fl">
+                                    <b></b>
+                                    <a href="cart.html">加入购物车</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <div class="p-img fl">
+                                    <a href="#"><img src="image/item4.jpg" alt=""></a>
+                                </div>
+                                <div class="p-name fl">
+                                    <a href="#">荣耀20青春版手机全网通 冰岛幻境 全网通 （6G+64GB）</a>
+                                </div>
+                                <div class="p-price fl">
+                                    <strong>
+                                        ￥1048.00
+                                    </strong>
+                                </div>
+                                <div class="p-btn fl">
+                                    <b></b>
+                                    <a href="cart.html">加入购物车</a>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="panel-nav">
+                    <ul>
+                        <li class="s-nav-item current">1</li>
+                        <li class="s-nav-item">2</li>
+                        <li class="s-nav-item">3</li>
+                        <li class="s-nav-item">4</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--        footer start-->
+    <div class="foot"></div>
+    <script type="text/javascript">$(".foot").load("foot.html");</script>
+    <!--        footer end-->
+</body>
+<script>
+    window.onselectstart = ()=>{return false};
+</script>
+</html>

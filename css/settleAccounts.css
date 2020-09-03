@@ -1,0 +1,220 @@
+.settle-container {
+    height: 130px;
+    position: relative;
+}
+.logo-con a{
+    display: block;
+    position: absolute;
+    width: 175px;
+    height: 56px;
+    background: url("../image/logo.png") no-repeat;
+    background-size: contain;
+    margin-top: 30px;
+    left: 0px;
+}
+.settle-title {
+    position: absolute;
+    left: 180px;
+    top: 45px;
+    font-size: 20px;
+}
+/*步骤进度条*/
+.stepflex {
+    width: 480px;
+    height: 40px;
+    margin-top: 40px;
+}
+.first-done,
+.second-done,
+.last-done   {
+    width: 160px;
+    position: relative;
+    border-top: 5px solid #caecb6;
+    text-align: center;
+}
+.s-num {
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: #caecb6;
+    text-align: center;
+    line-height: 23px;
+    color: white;
+    position: relative;
+    margin:-15px auto  0;
+}
+.s-text {
+    color: #caecb6;
+}
+.s-one {
+    position: absolute;
+    display: inline-block;
+    width: 5px;
+    height: 7px;
+    background-color: #caecb6;
+    left: 0px;
+    top: -5px;
+}
+
+/*订单信息*/
+.container {
+}
+.checkout-title {
+    height: 42px;
+    line-height: 42px;
+    font-size: 16px;
+}
+.checkout-step {
+    margin-bottom: 20px;
+    padding: 20px 20px;
+    border: 1px solid #dddddd;
+    margin-bottom: 30px;
+}
+.step-title {
+    line-height: 40px;
+    height: 40px;
+    color: #333;
+}
+.step-title h3 {
+    display: block;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    font-weight: 600;
+}
+.extra {
+    float: right;
+}
+.extra a {
+    color: #005aa0;
+}
+.step-content{
+    margin: 5px 10px 0px 20px;
+}
+.consignee-address li {
+    margin: 6px 0;
+    height: 32px;
+}
+.consignee-item {
+    border: 1px solid #dddddd;
+    height: 18px;
+    line-height: 18px;
+    padding: 5px 10px;
+    width: 120px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #fff;
+    float: left;
+    position: relative;
+}
+/*选择 selected icon*/
+.order-info b {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 12px;
+    height: 12px;
+    background: url("../image/selected-icon.png");
+}
+.item-selected {
+    border: 2px solid #e4393c!important;
+}
+.addre-detail {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+.addre-detail span {
+    margin-left: 10px;
+}
+.addre-detail:hover {
+    background-color: #fff3f3;
+}
+.hr {
+    border-bottom: 1px solid #e6e6e6;
+    margin:30px 0px 0px 10px;
+}
+.skuinfo {
+}
+.payment-list li{
+    height: 32px;
+}
+.payment-item {
+    border: 1px solid #dddddd;
+    height: 18px;
+    line-height: 18px;
+    padding: 5px 10px;
+    width: 120px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #fff;
+    float: left;
+    position: relative;
+    margin-right: 10px;
+}
+.goods-item-extra {
+    background-color: #f3fbfe;
+    height: 100px;
+}
+.goods-item-img {
+    padding: 10px 20px;
+}
+.goods-item-img img{
+    width: 83px;
+    height: 83px;
+}
+.goods-item-mesg {
+    width: 300px;
+}
+.goods-item-price,
+.goods-item-mesg {
+    margin: 20px 20px 0px 20px;
+}
+.goods-item-price strong{
+    margin: 30px 30px 30px 0px;
+}
+.invoice-info {
+    padding-left: 10px;
+}
+.trade,
+.statistic {
+    padding: 10px;
+    margin: 10px 0px;
+}
+.trade {
+    background-color: #f4f4f4;
+}
+.fc-price,
+.fc-receiverInfo,
+.total-price,
+.freight {
+    text-align: right;
+    line-height: 30px;
+}
+.fc-price .price {
+    color: #e12228;
+    font-weight: 600;
+    font-size: 14px;
+}
+.fc-receiverInfo {
+    font-size: 11px;
+}
+.submit {
+    padding: 10px;
+    text-align: right;
+    margin-bottom: 30px;
+}
+.s-btn {
+    padding: 12px 35px;
+    margin: 0 0 10px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 0;
+    background-color: #d44852;
+    color: white;
+}
+.s-btn:hover {
+    color: white;
+}

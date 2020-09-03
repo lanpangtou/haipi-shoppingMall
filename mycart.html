@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的购物车</title>
+    <meta name="description" content="嗨皮，中国线上购物的地标网站，亚洲超大的综合性购物平台，拥有10万多品牌商家。每日发布大量国内外商品！正品网购，上嗨皮！嗨皮千万大牌正品,品类全，一站购，支付安全，退换无忧！理想生活上嗨皮!">
+    <meta name="keywords" content="商城,网上购物,网购,进口食品,美容护理,母婴玩具,家用电器,手机数码,家居生活,服饰内衣,营养保健,钟表珠宝,饰品箱包,汽车生活,图书音像,礼品卡">
+    <link rel="icon" href="image/icon.png"  type="image/x-icon">
+    <link  rel="stylesheet" href="css/reset.css">
+    <link  rel="stylesheet" href="css/commen.css">
+    <link  rel="stylesheet" href="css/mycart.css">
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <style>
+        [v-cloak]{
+            display: none;
+        }
+    </style>
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+<div id="cartApp">
+    <div>
+        <haipi-top/>
+    </div>
+    <!--    main-->
+    <div class="container">
+        <div class="centre">
+            <div class="cartt-filter-bar">
+                <div class="switch-cart">
+                    <a href="#">
+                        <em>全部商品</em>
+                        <span class="number">5</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="cart-wrap">
+            <div class="centre">
+                <div class="hp-cart">
+<!--                    购物车表头-->
+                    <div class="cart-thead">
+                        <div class="column t-checkbox">
+                            <div class="cart-checkbox fl">
+<!--                                <input class="hpcheckbox" type="checkbox" name="toggle-checkboxs">-->
+                                <el-checkbox :indeterminate="isIndeterminate" v-model="checkAll" @change="handleCheckAllChange"></el-checkbox>
+                            </div>
+                            全选
+                        </div>
+                        <div class="column t-goods">商品</div>
+                        <div class="column t-props"></div>
+                        <div class="column t-price">单价</div>
+                        <div class="column t-quantity">数量</div>
+                        <div class="column t-sum">小计</div>
+                        <div class="column t-action">操作</div>
+                    </div>
+<!--                    购物车商品列表-->
+                    <div class="cart-list">
+<!--                        每一个店铺的商品列表-->
+                        <div class="cart-item-list">
+                            <div class="cart-tbody">
+    <!--                           店铺名-->
+                                <div class="shop">
+                                    <div class="cart-checkbox fl">
+<!--                                        <input class="hpcheckbox" type="checkbox" name="shop-checkboxs">-->
+                                    </div>
+                                    <span class="shop-txt">自营店</span>
+                                </div>
+    <!--                          商品item列表-->
+                                <el-checkbox-group v-model="checkedCarts" @change="handleCheckedCitiesChange">
+                                <div class="item-list">
+                                    <div class="item-item" :key="index" v-for="(cart,index) in carts">
+<!--                                      商品信息-->
+                                        <div class="item-form clearfix">
+                                            <div class="cell p-checkbox">
+                                                <div class="cart-checkboxs">
+<!--                                                    <input class="hpcheckbox" :value="cart.skuId" type="checkbox" name="checkItem">-->
+                                                    <el-checkbox :label="cart">&nbsp;</el-checkbox>
+                                                </div>
+                                            </div>
+
+                                            <div class="cell p-goods">
+                                                <div class="goods-item clearfix">
+                                                    <div class="p-img">
+                                                        <a href="#"><img :src="cart.image" alt=""></a>
+                                                    </div>
+                                                    <div class="item-mesg">
+                                                        <div class="p-name">
+                                                            <a href="#">{{cart.title}}</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="cell p-props">
+<!--                                                <div class="props-txt">{{cart.ownSpec[0]}}</div>-->
+<!--                                                <div class="props-txt">20年新款 八代i5 8G 256G</div>-->
+                                            </div>
+
+                                            <div class="cell p-price">
+                                                <p><strong>{{cart.price}}</strong></p>
+                                            </div>
+
+                                            <div class="cell p-quantity">
+                                                <div class="quantity-form">
+                                                    <a href="javascript:void(0);" @click="decrement()" :id="cart.skuId" class="decrement fl">-</a>
+                                                    <input type="text" :value="cart.count" :id="cart.skuId" class="itxt">
+                                                    <a href="javascript:void(0);" @click="increment()" :id="cart.skuId" class="increment fr">+</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="cell p-sum">
+                                                <strong>{{cart.price * cart.count}}</strong>
+                                            </div>
+
+                                            <div class="cell p-action">
+                                                <a class="cart-remove" href="javascript:void(0);">删除</a>
+                                                <a href="javascript:void(0);" class="cart-follow">移到我的关注</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                </el-checkbox-group>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="floatbar">
+                        <div class="floatbar-wrap clearfix">
+                            <div class="selectall">
+                                <div class="cart-checkbox fl">
+<!--                                    <input type="checkbox" name="toggle-checkboxes" class="hpcheckbox">-->
+                                    <el-checkbox :indeterminate="isIndeterminate" v-model="checkAll" @change="handleCheckAllChange"></el-checkbox>
+
+                                </div>
+                                全选
+                            </div>
+                            <div class="operation fl">
+                                <a href="#none" class="remove-batch">删除选中商品</a>
+                                <a href="#none" class="follow-batch" >移到关注</a>
+                                <a href="#none" class="cleaner-opt J_clr_all" title="亲，点我可快速清理购物车商品哦！">清理购物车</a>
+                            </div>
+
+                            <div class="floatbar-right">
+                                <div class="btn-area fr">
+                                    <a href="settleAccounts.html" @click="checkOut()">去结算</a>
+                                </div>
+                                <div class="price-sum fr">
+                                    <span class="txt">总价：</span>
+                                    <span class="price-new">￥<span>{{totalPrice}}</span></span>
+                                    <span></span>
+                                </div>
+                                <div class="amount-sum fr">
+                                    已选择 <em>{{totalNum}}</em> 件商品
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!--        footer start-->
+    <div class="foot"></div>
+    <script type="text/javascript">$(".foot").load("foot.html");</script>
+    <!--        footer end-->
+</body>
+<script src="/js/vue.js"></script>
+<script src="/js/axios.min.js"></script>
+<script src="/js/commen.js"></script>
+<script src="/js/qs.min.js"></script>
+<!-- 引入组件库 -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script type="text/javascript">
+    var vm = new Vue({
+        el: "#cartApp",
+        data: {
+            carts: [],
+            totalPrice: 0,
+            totalNum: 0,
+            checkAll: false,//全选
+            checkedCarts: null,//选中的商品
+            cartList: [],
+            isIndeterminate: true,
+        },
+        created() {
+            this.loadCarts();
+        },
+        watch: {
+            checkedCarts: function (value) {
+                this.totalNum = 0;
+                this.totalPrice = 0;
+                for (let i = 0; i < this.checkedCarts.length; i++) {
+                    this.totalNum += this.checkedCarts[i].count
+                    this.totalPrice += this.checkedCarts[i].price * this.checkedCarts[i].count;
+                }
+            }
+        },
+        methods: {
+            loadCarts() {
+                Hp.http.get("/cart/query").then(res => {
+                    console.log(res.data);
+                    this.cartList = this.carts = res.data;
+                })
+            },
+            checkOut() {
+                if (this.checkedCarts == null) {
+                    alert("请先选择您需要结算的物品!");
+                    return;
+                }
+                localStorage.setItem("selectCarts",JSON.stringify(this.checkedCarts));
+                window.location = "http://www.haipi.com/settleAccounts.html";
+            },
+            handleCheckAllChange(val) {
+                this.checkedCarts = val ? this.carts : [];
+                this.isIndeterminate = false;
+            },
+            handleCheckedCitiesChange(value) {
+                let checkedCount = value.length;
+                this.checkAll = checkedCount === this.cartList.length;
+                this.isIndeterminate = checkedCount > 0 && checkedCount < this.cartList.length;
+            },
+            decrement() {
+
+            }
+        },
+        components:{
+            haipiTop: () => import("/js/page/top.js")
+        }
+    })
+
+</script>
+<script>
+    window.onselectstart = ()=>{return false};
+</script>
+</html>
